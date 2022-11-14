@@ -1,0 +1,1473 @@
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@2eb06681
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@415b86c4 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:00.897
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@47629351
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@2a4b466d (name: org, proxy: true)' is not contained in a resource.
+17000 / 30000
+  -> elapsed: 272126
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:12.867
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@5273d2f
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@dcac797 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:13.885
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@1ef9082c
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@6a62e8ea (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:13.901
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@41f429c8
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@b813fc8 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:13.944
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@4753be30
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@1d4f1894 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:13.959
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@4a2dcc36
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@5827309c (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:13.974
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@2f277aff
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@73de17a5 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:13.991
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@3ee690e4
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@698bdbcc (name: org, proxy: true)' is not contained in a resource.
+18000 / 30000
+  -> elapsed: 288027
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:30.540
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@463ba0e5
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@2253bf8c (name: String, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:30.729
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@1ff8428e
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@645e9e7b (name: org, proxy: true)' is not contained in a resource.
+19000 / 30000
+  -> elapsed: 304276
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:39.977
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@e12b716
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@1d99e80c (name: Object, proxy: true)' is not contained in a resource.
+20000 / 30000
+  -> elapsed: 320447
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:57:57.978
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@452c40ae
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@3c1d31e7 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 02:58:02.307
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:58:10.355
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@705a4a77
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@7f90e503 (name: org, proxy: true)' is not contained in a resource.
+21000 / 30000
+  -> elapsed: 336405
+22000 / 30000
+  -> elapsed: 352586
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:58:30.615
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@332fa288
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@5f417e7 (name: String, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:58:34.591
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@51699b3a
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@59530e12 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:58:36.388
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@62996706
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@a72e8bc (name: String, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 02:58:37.443
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@3e120c92
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@4af34af4 (name: org, proxy: true)' is not contained in a resource.
+23000 / 30000
+  -> elapsed: 368662
+24000 / 30000
+  -> elapsed: 384586
+25000 / 30000
+  -> elapsed: 400350
+26000 / 30000
+  -> elapsed: 416260
+27000 / 30000
+  -> elapsed: 432004
+28000 / 30000
+  -> elapsed: 447784
+29000 / 30000
+  -> elapsed: 463646
+30000 / 30000
+  -> elapsed: 479540
+elapsed: 479540
+dataset file C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\..\dataset\codesearchnet-java-decompressed\java_train_4.jsonl
+processing 30000 lines...
+1000 / 30000
+  -> elapsed: 16090
+2000 / 30000
+  -> elapsed: 31841
+3000 / 30000
+  -> elapsed: 47876
+4000 / 30000
+  -> elapsed: 63699
+5000 / 30000
+  -> elapsed: 78920
+6000 / 30000
+  -> elapsed: 95043
+7000 / 30000
+  -> elapsed: 111820
+8000 / 30000
+  -> elapsed: 127904
+9000 / 30000
+  -> elapsed: 144161
+10000 / 30000
+  -> elapsed: 160651
+11000 / 30000
+  -> elapsed: 177055
+12000 / 30000
+  -> elapsed: 193409
+error while processing line 12802: null
+java.lang.NullPointerException
+error while processing line 12878: null
+java.lang.NullPointerException
+13000 / 30000
+  -> elapsed: 209183
+14000 / 30000
+  -> elapsed: 225138
+error while processing line 14909: An invalid XML character (Unicode: 0x3) was found in the element content://for i = k−1,k−2,...,k−m
+java.lang.RuntimeException: An invalid XML character (Unicode: 0x3) was found in the element content://for i = k−1,k−2,...,k−m
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl$Escape.convert(XMLSaveImpl.java:3342)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.getDatatypeValue(XMLSaveImpl.java:3113)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveDataTypeSingle(XMLSaveImpl.java:1698)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1280)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1224)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2716)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1042)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2417)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1553)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1224)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2716)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1042)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2417)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1553)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1224)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2716)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1042)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedSingle(XMLSaveImpl.java:2403)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1547)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1224)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2716)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1042)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2417)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1553)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1224)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2716)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1042)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2417)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1553)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1224)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2716)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1042)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2417)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1553)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1224)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2716)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.writeTopObject(XMLSaveImpl.java:683)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.traverse(XMLSaveImpl.java:591)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:251)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:389)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1475)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:146)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+15000 / 30000
+  -> elapsed: 240859
+16000 / 30000
+  -> elapsed: 257065
+17000 / 30000
+  -> elapsed: 272762
+18000 / 30000
+  -> elapsed: 287826
+19000 / 30000
+  -> elapsed: 302952
+20000 / 30000
+  -> elapsed: 318363
+21000 / 30000
+  -> elapsed: 333566
+22000 / 30000
+  -> elapsed: 349019
+23000 / 30000
+  -> elapsed: 365162
+
+!ENTRY org.eclipse.modisco.java.discoverer 2 0 2022-11-14 03:06:41.932
+!MESSAGE typeArgument not found in visitor bijective map: {
+  final int resultK=gadget_.getHRegionCount() + gadget_.getRRegionCount();
+  int resultH=0;
+  int resultR=0;
+  int nextRPos=resultK;
+  final ArrayList<T> data=new ArrayList<>(resultK + 1);
+  final ArrayList<Double> weights=new ArrayList<>(resultK + 1);
+  for (int i=0; i < (resultK + 1); ++i) {
+    data.add(null);
+    weights.add(null);
+  }
+  final VarOptItemsSamples<T> sketchSamples=gadget_.getSketchSamples();
+  Iterator<VarOptItemsSamples<T>.WeightedSample> sketchIterator;
+  sketchIterator=sketchSamples.getRIterator();
+  while (sketchIterator.hasNext()) {
+    final VarOptItemsSamples<T>.WeightedSample ws=sketchIterator.next();
+    data.set(nextRPos,ws.getItem());
+    weights.set(nextRPos,-1.0);
+    ++resultR;
+    --nextRPos;
+  }
+  double transferredWeight=0;
+  sketchIterator=sketchSamples.getHIterator();
+  while (sketchIterator.hasNext()) {
+    final VarOptItemsSamples<T>.WeightedSample ws=sketchIterator.next();
+    if (ws.getMark()) {
+      data.set(nextRPos,ws.getItem());
+      weights.set(nextRPos,-1.0);
+      transferredWeight+=ws.getWeight();
+      ++resultR;
+      --nextRPos;
+    }
+ else {
+      data.set(resultH,ws.getItem());
+      weights.set(resultH,ws.getWeight());
+      ++resultH;
+    }
+  }
+  assert (resultH + resultR) == resultK;
+  assert Math.abs(transferredWeight - outerTauNumer) < 1e-10;
+  final double resultRWeight=gadget_.getTotalWtR() + transferredWeight;
+  final long resultN=n_;
+  data.set(resultH,null);
+  weights.set(resultH,-1.0);
+  return newInstanceFromUnionResult(data,weights,resultK,resultN,resultH,resultR,resultRWeight);
+}
+ (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.RuntimeException: typeArgument not found in visitor bijective map: {
+  final int resultK=gadget_.getHRegionCount() + gadget_.getRRegionCount();
+  int resultH=0;
+  int resultR=0;
+  int nextRPos=resultK;
+  final ArrayList<T> data=new ArrayList<>(resultK + 1);
+  final ArrayList<Double> weights=new ArrayList<>(resultK + 1);
+  for (int i=0; i < (resultK + 1); ++i) {
+    data.add(null);
+    weights.add(null);
+  }
+  final VarOptItemsSamples<T> sketchSamples=gadget_.getSketchSamples();
+  Iterator<VarOptItemsSamples<T>.WeightedSample> sketchIterator;
+  sketchIterator=sketchSamples.getRIterator();
+  while (sketchIterator.hasNext()) {
+    final VarOptItemsSamples<T>.WeightedSample ws=sketchIterator.next();
+    data.set(nextRPos,ws.getItem());
+    weights.set(nextRPos,-1.0);
+    ++resultR;
+    --nextRPos;
+  }
+  double transferredWeight=0;
+  sketchIterator=sketchSamples.getHIterator();
+  while (sketchIterator.hasNext()) {
+    final VarOptItemsSamples<T>.WeightedSample ws=sketchIterator.next();
+    if (ws.getMark()) {
+      data.set(nextRPos,ws.getItem());
+      weights.set(nextRPos,-1.0);
+      transferredWeight+=ws.getWeight();
+      ++resultR;
+      --nextRPos;
+    }
+ else {
+      data.set(resultH,ws.getItem());
+      weights.set(resultH,ws.getWeight());
+      ++resultH;
+    }
+  }
+  assert (resultH + resultR) == resultK;
+  assert Math.abs(transferredWeight - outerTauNumer) < 1e-10;
+  final double resultRWeight=gadget_.getTotalWtR() + transferredWeight;
+  final long resultN=n_;
+  data.set(resultH,null);
+  weights.set(resultH,-1.0);
+  return newInstanceFromUnionResult(data,weights,resultK,resultN,resultH,resultR,resultRWeight);
+}
+
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JDTVisitorUtils.manageBindingRef(JDTVisitorUtils.java:181)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JDTVisitor.endVisit(JDTVisitor.java:1873)
+	at org.eclipse.jdt.core.dom.ParameterizedType.accept0(ParameterizedType.java:167)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3238)
+	at org.eclipse.jdt.core.dom.VariableDeclarationStatement.accept0(VariableDeclarationStatement.java:253)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3261)
+	at org.eclipse.jdt.core.dom.Block.accept0(Block.java:128)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3238)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:677)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3261)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:499)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3261)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.visitCompilationUnit(JavaReader.java:322)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.parseTypeRoot(JavaReader.java:279)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.parsePackage(JavaReader.java:304)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.readModel(JavaReader.java:182)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:162)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:06:41.932
+!MESSAGE java.lang.NullPointerException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.NullPointerException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@6666fdd
+type = org.eclipse.modisco.java.emf.impl.PrimitiveTypeIntImpl@71755751 (name: int, proxy: false)' is not contained in a resource.
+24000 / 30000
+  -> elapsed: 381564
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:07:08.027
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@4c4b1302
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@f67465d (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:07:08.384
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@cb5cd16
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@f804324 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:07:08.733
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@a73e2d7
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@1a7b92c (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:07:10.542
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@5f4f6adf
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@17f785ca (name: org, proxy: true)' is not contained in a resource.
+25000 / 30000
+  -> elapsed: 397616
+26000 / 30000
+  -> elapsed: 413831
+27000 / 30000
+  -> elapsed: 430054
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:07:47.044
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@7684e5df
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@b22da8b (name: com, proxy: true)' is not contained in a resource.
+28000 / 30000
+  -> elapsed: 447378
+29000 / 30000
+  -> elapsed: 464195
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:08:30.944
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@16b6fe40
+type = org.eclipse.modisco.java.emf.impl.AnnotationTypeDeclarationImpl@2e987b23 (name: Override, proxy: true)' is not contained in a resource.
+30000 / 30000
+  -> elapsed: 480423
+elapsed: 480423
+dataset file C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\..\dataset\codesearchnet-java-decompressed\java_train_5.jsonl
+processing 30000 lines...
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:08:37.788
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@1b0b3ecd
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@47e5c604 (name: String, proxy: true)' is not contained in a resource.
+1000 / 30000
+  -> elapsed: 16401
+2000 / 30000
+  -> elapsed: 31984
+3000 / 30000
+  -> elapsed: 47751
+4000 / 30000
+  -> elapsed: 63693
+5000 / 30000
+  -> elapsed: 79478
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:09:58.899
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:09:58.899
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+6000 / 30000
+  -> elapsed: 95783
+7000 / 30000
+  -> elapsed: 112220
+8000 / 30000
+  -> elapsed: 128619
+9000 / 30000
+  -> elapsed: 145400
+10000 / 30000
+  -> elapsed: 162299
+11000 / 30000
+  -> elapsed: 178898
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@44f93c8d
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@5e79c573 (name: ERiCNeighborPredicate<V>, proxy: false)' is not contained in a resource.
+error while processing line 11755: null
+java.lang.NullPointerException
+error while processing line 11756: null
+java.lang.NullPointerException
+12000 / 30000
+  -> elapsed: 195331
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@1ecc1818
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@56f48af (name: ObjHistogram<double[]>, proxy: false)' is not contained in a resource.
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@292ad193
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@3cadfb6 (name: Heap<Individuum>, proxy: false)' is not contained in a resource.
+13000 / 30000
+  -> elapsed: 211634
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@27d0fcbf
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@2361207b (name: Heap<HiCSSubspace>, proxy: false)' is not contained in a resource.
+14000 / 30000
+  -> elapsed: 227675
+15000 / 30000
+  -> elapsed: 243375
+16000 / 30000
+  -> elapsed: 259114
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:12:55.820
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@371e232c
+type = org.eclipse.modisco.java.emf.impl.AnnotationTypeDeclarationImpl@2c577ad3 (name: Override, proxy: true)' is not contained in a resource.
+17000 / 30000
+  -> elapsed: 275830
+18000 / 30000
+  -> elapsed: 292509
+19000 / 30000
+  -> elapsed: 309459
+20000 / 30000
+  -> elapsed: 326305
+21000 / 30000
+  -> elapsed: 342730
+22000 / 30000
+  -> elapsed: 359711
+23000 / 30000
+  -> elapsed: 376679
+24000 / 30000
+  -> elapsed: 393043
+25000 / 30000
+  -> elapsed: 409775
+26000 / 30000
+  -> elapsed: 426567
+27000 / 30000
+  -> elapsed: 442768
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:16:10.453
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@21656c2b
+type = org.eclipse.modisco.java.emf.impl.AnnotationTypeDeclarationImpl@2e828e6 (name: Override, proxy: true)' is not contained in a resource.
+28000 / 30000
+  -> elapsed: 459524
+29000 / 30000
+  -> elapsed: 476009
+30000 / 30000
+  -> elapsed: 492776
+elapsed: 492776
+dataset file C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\..\dataset\codesearchnet-java-decompressed\java_train_6.jsonl
+processing 30000 lines...
+1000 / 30000
+  -> elapsed: 16667
+2000 / 30000
+  -> elapsed: 32979
+3000 / 30000
+  -> elapsed: 49585
+4000 / 30000
+  -> elapsed: 66817
+5000 / 30000
+  -> elapsed: 83926
+6000 / 30000
+  -> elapsed: 100029
+7000 / 30000
+  -> elapsed: 116035
+8000 / 30000
+  -> elapsed: 132203
+9000 / 30000
+  -> elapsed: 148370
+10000 / 30000
+  -> elapsed: 164382
+11000 / 30000
+  -> elapsed: 181065
+12000 / 30000
+  -> elapsed: 197896
+13000 / 30000
+  -> elapsed: 214069
+14000 / 30000
+  -> elapsed: 229849
+15000 / 30000
+  -> elapsed: 246228
+16000 / 30000
+  -> elapsed: 262680
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:21:21.259
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@1c73d720
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@5b6db3ec (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:21:26.614
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@270c4846
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@78bff1d6 (name: javax, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:21:26.630
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@6464425f
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@660d9077 (name: javax, proxy: true)' is not contained in a resource.
+17000 / 30000
+  -> elapsed: 278815
+18000 / 30000
+  -> elapsed: 294149
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:21:57.799
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@1389e9c7
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@1bdd1fad (name: javax, proxy: true)' is not contained in a resource.
+19000 / 30000
+  -> elapsed: 310191
+20000 / 30000
+  -> elapsed: 326402
+21000 / 30000
+  -> elapsed: 342871
+22000 / 30000
+  -> elapsed: 359537
+23000 / 30000
+  -> elapsed: 376065
+24000 / 30000
+  -> elapsed: 392575
+25000 / 30000
+  -> elapsed: 408542
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:23:44.559
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@66879817
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@74016e2f (name: String, proxy: true)' is not contained in a resource.
+26000 / 30000
+  -> elapsed: 424967
+27000 / 30000
+  -> elapsed: 441659
+28000 / 30000
+  -> elapsed: 458500
+29000 / 30000
+  -> elapsed: 473855
+30000 / 30000
+  -> elapsed: 489619
+elapsed: 489619
+dataset file C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\..\dataset\codesearchnet-java-decompressed\java_train_7.jsonl
+processing 30000 lines...
+1000 / 30000
+  -> elapsed: 16318
+2000 / 30000
+  -> elapsed: 32605
+3000 / 30000
+  -> elapsed: 48580
+4000 / 30000
+  -> elapsed: 64667
+5000 / 30000
+  -> elapsed: 81353
+6000 / 30000
+  -> elapsed: 97733
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.LineCommentImpl@278949c6 (content: //have to use old Element here because of superclass, enclosedByParent: false, prefixOfParent: true)' is not contained in a resource.
+7000 / 30000
+  -> elapsed: 114387
+8000 / 30000
+  -> elapsed: 131305
+9000 / 30000
+  -> elapsed: 147712
+10000 / 30000
+  -> elapsed: 164042
+11000 / 30000
+  -> elapsed: 180409
+12000 / 30000
+  -> elapsed: 196837
+13000 / 30000
+  -> elapsed: 212967
+14000 / 30000
+  -> elapsed: 229287
+15000 / 30000
+  -> elapsed: 245200
+16000 / 30000
+  -> elapsed: 261279
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:29:35.761
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+17000 / 30000
+  -> elapsed: 277328
+18000 / 30000
+  -> elapsed: 293705
+19000 / 30000
+  -> elapsed: 310299
+20000 / 30000
+  -> elapsed: 326199
+21000 / 30000
+  -> elapsed: 342719
+22000 / 30000
+  -> elapsed: 358803
+23000 / 30000
+  -> elapsed: 375679
+24000 / 30000
+  -> elapsed: 392153
+25000 / 30000
+  -> elapsed: 409201
+26000 / 30000
+  -> elapsed: 426086
+27000 / 30000
+  -> elapsed: 441561
+28000 / 30000
+  -> elapsed: 457349
+29000 / 30000
+  -> elapsed: 473089
+30000 / 30000
+  -> elapsed: 489577
+elapsed: 489577
+dataset file C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\..\dataset\codesearchnet-java-decompressed\java_train_8.jsonl
+processing 30000 lines...
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:33:15.668
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@62379765
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@513cad8f (name: String, proxy: true)' is not contained in a resource.
+1000 / 30000
+  -> elapsed: 16458
+2000 / 30000
+  -> elapsed: 32674
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:33:54.084
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@4515114b
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@616aa574 (name: com, proxy: true)' is not contained in a resource.
+3000 / 30000
+  -> elapsed: 48380
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:34:01.767
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@3b3d07ff
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@2b5ad466 (name: NullPointerException, proxy: true)' is not contained in a resource.
+4000 / 30000
+  -> elapsed: 64793
+5000 / 30000
+  -> elapsed: 81298
+6000 / 30000
+  -> elapsed: 97989
+7000 / 30000
+  -> elapsed: 113967
+8000 / 30000
+  -> elapsed: 130339
+9000 / 30000
+  -> elapsed: 145949
+10000 / 30000
+  -> elapsed: 161569
+11000 / 30000
+  -> elapsed: 177420
+12000 / 30000
+  -> elapsed: 193150
+13000 / 30000
+  -> elapsed: 209170
+14000 / 30000
+  -> elapsed: 225226
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:36:59.640
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@2cbe02e4
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@276cf014 (name: org, proxy: true)' is not contained in a resource.
+15000 / 30000
+  -> elapsed: 241356
+16000 / 30000
+  -> elapsed: 257201
+17000 / 30000
+  -> elapsed: 273403
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@14a43f81
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@4b5c086c (name: AbstractBaseDTNode<I,D>, proxy: false)' is not contained in a resource.
+18000 / 30000
+  -> elapsed: 289371
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@30423f10
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@b29f53b (name: AbstractLinkingCandidate<?>, proxy: false)' is not contained in a resource.
+19000 / 30000
+  -> elapsed: 305698
+20000 / 30000
+  -> elapsed: 321928
+21000 / 30000
+  -> elapsed: 338132
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:38:49.805
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@48937e62
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@436af2d0 (name: com, proxy: true)' is not contained in a resource.
+22000 / 30000
+  -> elapsed: 354228
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:39:03.859
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@71ddda88
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@4f2d5d0e (name: org, proxy: true)' is not contained in a resource.
+java.lang.NullPointerException
+error while processing line 22658: null
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:39:15.993
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:39:15.993
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:39:15.994
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:39:15.994
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+23000 / 30000
+  -> elapsed: 370757
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:39:21.885
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@4a5de2ed
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@3267cc51 (name: org, proxy: true)' is not contained in a resource.
+24000 / 30000
+  -> elapsed: 387497
+25000 / 30000
+  -> elapsed: 402995
+26000 / 30000
+  -> elapsed: 418648
+27000 / 30000
+  -> elapsed: 434864
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:40:23.448
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@6ca4aa24
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@16f33683 (name: org, proxy: true)' is not contained in a resource.
+28000 / 30000
+  -> elapsed: 451578
+29000 / 30000
+  -> elapsed: 467728
+30000 / 30000
+  -> elapsed: 483796
+elapsed: 483796
+dataset file C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\..\dataset\codesearchnet-java-decompressed\java_train_9.jsonl
+processing 30000 lines...
+1000 / 30000
+  -> elapsed: 15893
+2000 / 30000
+  -> elapsed: 31686
+3000 / 30000
+  -> elapsed: 47638
+4000 / 30000
+  -> elapsed: 63700
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:42:29.089
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@71668fce
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@b2f65be (name: String, proxy: true)' is not contained in a resource.
+5000 / 30000
+  -> elapsed: 79858
+6000 / 30000
+  -> elapsed: 96541
+7000 / 30000
+  -> elapsed: 112532
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:43:19.752
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@74a8c048
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@1325e39c (name: javax, proxy: true)' is not contained in a resource.
+8000 / 30000
+  -> elapsed: 128750
+
+!ENTRY org.eclipse.modisco.java.discoverer 2 0 2022-11-14 03:43:26.550
+!MESSAGE typeArgument not found in visitor bijective map: public class TargetClass {
+  private Collection<ImageListEditor<ColumnType>.Entry> getAcceptableEntries(  final ColumnType type){
+    final Collection<ImageListEditor<ColumnType>.Entry> result=new ArrayList<ImageListEditor<org.dashbuilder.dataset.ColumnType>.Entry>();
+    if (type != null) {
+      if (ColumnType.DATE.equals(type)) {
+        result.add(buildEntry(ColumnType.DATE));
+      }
+ else       if (ColumnType.LABEL.equals(type)) {
+        result.add(buildEntry(ColumnType.LABEL));
+        result.add(buildEntry(ColumnType.TEXT));
+      }
+ else       if (ColumnType.TEXT.equals(type)) {
+        result.add(buildEntry(ColumnType.LABEL));
+        result.add(buildEntry(ColumnType.TEXT));
+      }
+ else       if (ColumnType.NUMBER.equals(type)) {
+        result.add(buildEntry(ColumnType.LABEL));
+        result.add(buildEntry(ColumnType.NUMBER));
+      }
+    }
+    return result;
+  }
+}
+ (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.RuntimeException: typeArgument not found in visitor bijective map: public class TargetClass {
+  private Collection<ImageListEditor<ColumnType>.Entry> getAcceptableEntries(  final ColumnType type){
+    final Collection<ImageListEditor<ColumnType>.Entry> result=new ArrayList<ImageListEditor<org.dashbuilder.dataset.ColumnType>.Entry>();
+    if (type != null) {
+      if (ColumnType.DATE.equals(type)) {
+        result.add(buildEntry(ColumnType.DATE));
+      }
+ else       if (ColumnType.LABEL.equals(type)) {
+        result.add(buildEntry(ColumnType.LABEL));
+        result.add(buildEntry(ColumnType.TEXT));
+      }
+ else       if (ColumnType.TEXT.equals(type)) {
+        result.add(buildEntry(ColumnType.LABEL));
+        result.add(buildEntry(ColumnType.TEXT));
+      }
+ else       if (ColumnType.NUMBER.equals(type)) {
+        result.add(buildEntry(ColumnType.LABEL));
+        result.add(buildEntry(ColumnType.NUMBER));
+      }
+    }
+    return result;
+  }
+}
+
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JDTVisitorUtils.manageBindingRef(JDTVisitorUtils.java:181)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JDTVisitor.endVisit(JDTVisitor.java:1873)
+	at org.eclipse.jdt.core.dom.ParameterizedType.accept0(ParameterizedType.java:167)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3238)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:662)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3261)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:499)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3261)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3190)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.visitCompilationUnit(JavaReader.java:322)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.parseTypeRoot(JavaReader.java:279)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.parsePackage(JavaReader.java:304)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.readModel(JavaReader.java:182)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:162)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:43:26.551
+!MESSAGE java.lang.NullPointerException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.NullPointerException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@46a7e268
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@380695e6 (name: ImageListEditor<ColumnType>, proxy: false)' is not contained in a resource.
+9000 / 30000
+  -> elapsed: 144578
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@51132e4b
+type = org.eclipse.modisco.java.emf.impl.ParameterizedTypeImpl@15076835 (name: KeyGroupedIterator<T1>, proxy: false)' is not contained in a resource.
+10000 / 30000
+  -> elapsed: 160609
+11000 / 30000
+  -> elapsed: 176796
+12000 / 30000
+  -> elapsed: 192737
+
+!ENTRY org.eclipse.modisco.java 2 0 2022-11-14 03:44:37.733
+!MESSAGE Not managed type declaration: typeDeclaration.eContainer().getClass()=  (org.eclipse.modisco.java_1.5.0.v20211130-1518)
+!STACK 0
+org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger$LogStackTrace
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.log(MoDiscoLogger.java:108)
+	at org.eclipse.modisco.infra.common.core.logging.MoDiscoLogger.logWarning(MoDiscoLogger.java:54)
+	at org.eclipse.modisco.java.internal.util.JavaUtil.getQualifiedName(JavaUtil.java:185)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:109)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.getRawSignature(MethodRedefinitionManager.java:98)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.MethodRedefinitionManager.resolveMethodRedefinitions(MethodRedefinitionManager.java:57)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.resolveMethodRedefinition(JavaReader.java:348)
+	at org.eclipse.modisco.java.discoverer.internal.io.java.JavaReader.terminate(JavaReader.java:405)
+	at org.eclipse.modisco.java.discoverer.AbstractDiscoverJavaModelFromProject.analyzeJavaProject(AbstractDiscoverJavaModelFromProject.java:165)
+	at org.eclipse.modisco.java.discoverer.DiscoverJavaModelFromJavaProject.basicDiscoverElement(DiscoverJavaModelFromJavaProject.java:38)
+	at discoverdataset.JavaProjectDiscoverer.discover(Application.java:132)
+	at discoverdataset.Application.discoverDataset(Application.java:96)
+	at discoverdataset.Application.start(Application.java:37)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+13000 / 30000
+  -> elapsed: 208246
+14000 / 30000
+  -> elapsed: 223932
+15000 / 30000
+  -> elapsed: 239661
+16000 / 30000
+  -> elapsed: 255202
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:45:32.462
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@7532cdce
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@4b286a66 (name: Double, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:45:32.478
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@5abc5d7b
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@53a9ccad (name: Double, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:45:32.490
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@2caf860f
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@63b1ed61 (name: Long, proxy: true)' is not contained in a resource.
+17000 / 30000
+  -> elapsed: 271036
+18000 / 30000
+  -> elapsed: 287201
+19000 / 30000
+  -> elapsed: 303161
+20000 / 30000
+  -> elapsed: 319613
+21000 / 30000
+  -> elapsed: 335912
+22000 / 30000
+  -> elapsed: 352360
+23000 / 30000
+  -> elapsed: 368737
+24000 / 30000
+  -> elapsed: 384842
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:47:45.774
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@17b1963
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@2fcce8c1 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:47:47.218
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@6fc824f6
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@7e006f95 (name: Exception, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:47:49.507
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@11ca8c12
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@2e0adcc0 (name: com, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:47:49.686
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@58a2c441
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@35ca68a1 (name: String, proxy: true)' is not contained in a resource.
+25000 / 30000
+  -> elapsed: 401434
+26000 / 30000
+  -> elapsed: 417691
+27000 / 30000
+  -> elapsed: 434127
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:29.345
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@4dd165cd
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@71e0d6c4 (name: javax, proxy: true)' is not contained in a resource.
+28000 / 30000
+  -> elapsed: 450199
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:56.660
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@45d9b82f
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@1ea25c26 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:56.676
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@6922c2d1
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@5c7fa714 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:56.691
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@31a683a5
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@3817e68a (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:56.702
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@6627618c
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@39df154c (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:56.773
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@73baa196
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@1ef06976 (name: Long, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:56.791
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@63579955
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@46b6bc5b (name: Boolean, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:56.806
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@ceb168d
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@6fe3b115 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:57.204
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@35bf454c
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@50daa351 (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:57.233
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.TypeAccessImpl@4f269559
+type = org.eclipse.modisco.java.emf.impl.ClassDeclarationImpl@6f873ffa (name: String, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:57.249
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@7033d89b
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@4f1586d (name: org, proxy: true)' is not contained in a resource.
+
+!ENTRY org.eclipse.modisco.java.discoverer 4 0 2022-11-14 03:48:57.263
+!MESSAGE java.lang.ClassCastException (org.eclipse.modisco.java.discoverer_1.5.1.v20211130-1518)
+!STACK 0
+java.lang.ClassCastException
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@61137814
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@52857302 (name: org, proxy: true)' is not contained in a resource.
+29000 / 30000
+  -> elapsed: 466270
+30000 / 30000
+  -> elapsed: 482264
+elapsed: 482264
+dataset file C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\..\dataset\codesearchnet-java-decompressed\java_valid_0.jsonl
+processing 15328 lines...
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@c159444
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@31ebf71c (name: java, proxy: true)' is not contained in a resource.
+error while serializing: The object 'org.eclipse.modisco.java.emf.impl.PackageAccessImpl@7844bf89
+package = org.eclipse.modisco.java.emf.impl.PackageImpl@1e2212cf (name: java, proxy: true)' is not contained in a resource.
+1000 / 15328
+  -> elapsed: 15436
+2000 / 15328
+  -> elapsed: 30864
+3000 / 15328
+  -> elapsed: 46998
+4000 / 15328
+  -> elapsed: 63152
+5000 / 15328
+  -> elapsed: 78977
+6000 / 15328
+  -> elapsed: 94934
+7000 / 15328
+  -> elapsed: 111136
+8000 / 15328
+  -> elapsed: 127272
+9000 / 15328
+  -> elapsed: 143041
+10000 / 15328
+  -> elapsed: 159037
+11000 / 15328
+  -> elapsed: 175095
+12000 / 15328
+  -> elapsed: 191015
+13000 / 15328
+  -> elapsed: 206884
+14000 / 15328
+  -> elapsed: 222626
+15000 / 15328
+  -> elapsed: 238588
+elapsed: 243888
