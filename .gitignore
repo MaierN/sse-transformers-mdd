@@ -2,3 +2,8 @@
 venv/
 
 dataset/codesearchnet-java*
+dataset/java.zip
+dataset/discovered.zip
+dataset/hf_dataset
+
+models/codet5-finetuned
