@@ -34,7 +34,8 @@ public class Application implements IApplication {
 	public Object start(IApplicationContext context) throws Exception {
 		System.out.println("starting plugin...");
 		
-		discoverDataset();
+		//discoverDataset();
+		testDiscovery();
 		ResourcesPlugin.getWorkspace().save(true, null);
 
 		return 0;
@@ -43,6 +44,105 @@ public class Application implements IApplication {
 	@Override
 	public void stop() {
 		System.out.println("stopping plugin...");
+	}
+	
+	private void testDiscovery() throws Exception {
+		System.out.println("testing...");
+		
+		IWorkspaceRoot workspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
+		IProject[] projects = workspaceRoot.getProjects();
+		
+		String workspaceFolder = workspaceRoot.getLocation().toOSString();
+		
+		System.out.println("workspace " + workspaceFolder);
+		
+		for (IProject project : projects) {
+			if (!project.getName().equals("TargetProject")) {
+				continue;
+			}
+			
+			System.out.println("project " + project.getName());
+			
+			String projectFolder = project.getProject().getFullPath().toString();
+			
+			Path targetClassPath1 = Paths.get(workspaceFolder, projectFolder, "src", "targetpackage", "TargetClass1.java");
+			Path targetClassPath2 = Paths.get(workspaceFolder, projectFolder, "src", "targetpackage", "TargetClass2.java");
+			
+			
+			List<Path> files = Files.list(Paths.get(workspaceFolder, "..", "dataset", "codesearchnet-java-decompressed")).collect(Collectors.toList());
+			for (Path path : files) {
+				System.out.println("dataset file " + path);
+				
+				Path outPath = Paths.get(workspaceFolder, "..", "sequence-dataset", "codesearchnet-java-discovered", path.getFileName().toString());
+				Files.writeString(outPath, "");
+				
+				List<String> lines = Files.readAllLines(path);
+				System.out.println("processing " + lines.size() + " lines...");
+
+				long start = System.currentTimeMillis();
+				
+				int idx = 0;
+				for (String line : lines) {
+					try {
+						JSONObject obj = new JSONObject(line);
+						
+						String contents1 = "package targetpackage;\n"
+								+ "\n"
+								+ "public class TargetClass1 {\n"
+								+ "    public static void main(String[] args) {\n"
+								+ "        System.out.println(\"aaabbb\");"
+								+ "    }"
+								+ "}\n";
+						Files.writeString(targetClassPath1, contents1);
+						
+						String contents2 = "package targetpackage;\n"
+								+ "\n"
+								+ "public class TargetClass2 {\n"
+								+ "    public void testFunc() {\n"
+								+ "        System.out.println(\"ccccdddd\");"
+								+ "    }"
+								+ "}\n";
+						Files.writeString(targetClassPath2, contents2);
+						
+						project.refreshLocal(IResource.DEPTH_INFINITE, null);
+						IJavaProject javaProject = JavaCore.create(project);
+						
+						JavaProjectDiscoverer projectDiscoverer = new JavaProjectDiscoverer();
+						String xmi = projectDiscoverer.discover(javaProject);
+						
+						if (xmi != null) {
+							JSONObject res = new JSONObject();
+							res.put("originalLine", idx);
+							res.put("code", obj.get("code"));
+							res.put("contents1", contents1);
+							res.put("contents2", contents2);
+							res.put("xmi", xmi);
+							
+							Files.writeString(outPath, res.toString() + "\n", StandardOpenOption.APPEND);
+						}
+					} catch (Exception e) {
+						System.out.println("error while processing line " + idx + ": " + e.getMessage());
+						e.printStackTrace();
+					}
+					
+					idx += 1;
+					if (idx % 1000 == 0) {
+						System.out.println(idx + " / " + lines.size());
+						long curr = System.currentTimeMillis();
+						long timeElapsed = curr - start;
+						System.out.println("  -> elapsed: " + timeElapsed);
+					}
+					
+					break;
+				}
+
+				long finish = System.currentTimeMillis();
+				long timeElapsed = finish - start;
+				System.out.println("elapsed: " + timeElapsed);
+				
+				break;
+			}
+		}
 	}
 	
 	private void discoverDataset() throws Exception {

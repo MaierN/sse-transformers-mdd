@@ -1,4 +1,8 @@
 
 venv/
+.env
 
 dataset/codesearchnet-java*
+dataset/discovered.zip
+sequence-dataset/repo_tarballs
+sequence-dataset/repo_java_files
