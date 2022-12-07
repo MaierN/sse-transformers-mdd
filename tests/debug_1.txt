@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ASCII"?>
+<java:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java" name="TargetProject">
+  <ownedElements name="targetpackage">
+    <ownedElements xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.0" name="TargetClass">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:MethodDeclaration" originalCompilationUnit="//@compilationUnits.0" name="using">
+        <annotations originalCompilationUnit="//@compilationUnits.0">
+          <type type="//@unresolvedItems.0"/>
+        </annotations>
+        <annotations originalCompilationUnit="//@compilationUnits.0">
+          <type type="//@unresolvedItems.1"/>
+          <values>
+            <value xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.2">
+              <qualifier xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.1"/>
+            </value>
+          </values>
+        </annotations>
+        <modifier visibility="public" static="true"/>
+        <body originalCompilationUnit="//@compilationUnits.0">
+          <statements xsi:type="java:ExpressionStatement" originalCompilationUnit="//@compilationUnits.0">
+            <expression xsi:type="java:MethodInvocation" originalCompilationUnit="//@compilationUnits.0" method="//@unresolvedItems.8">
+              <arguments xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.9"/>
+              <arguments xsi:type="java:StringLiteral" originalCompilationUnit="//@compilationUnits.0" escapedValue="&quot;resourceSupplier is null&quot;"/>
+              <expression xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.7"/>
+            </expression>
+          </statements>
+          <statements xsi:type="java:ExpressionStatement" originalCompilationUnit="//@compilationUnits.0">
+            <expression xsi:type="java:MethodInvocation" originalCompilationUnit="//@compilationUnits.0" method="//@unresolvedItems.8">
+              <arguments xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.10"/>
+              <arguments xsi:type="java:StringLiteral" originalCompilationUnit="//@compilationUnits.0" escapedValue="&quot;sourceSupplier is null&quot;"/>
+              <expression xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.7"/>
+            </expression>
+          </statements>
+          <statements xsi:type="java:ExpressionStatement" originalCompilationUnit="//@compilationUnits.0">
+            <expression xsi:type="java:MethodInvocation" originalCompilationUnit="//@compilationUnits.0" method="//@unresolvedItems.8">
+              <arguments xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.11"/>
+              <arguments xsi:type="java:StringLiteral" originalCompilationUnit="//@compilationUnits.0" escapedValue="&quot;disposer is null&quot;"/>
+              <expression xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.7"/>
+            </expression>
+          </statements>
+          <statements xsi:type="java:ReturnStatement" originalCompilationUnit="//@compilationUnits.0">
+            <expression xsi:type="java:MethodInvocation" originalCompilationUnit="//@compilationUnits.0" method="//@unresolvedItems.14">
+              <arguments xsi:type="java:ClassInstanceCreation" originalCompilationUnit="//@compilationUnits.0" method="//@ownedElements.1/@ownedPackages.0/@ownedElements.0/@bodyDeclarations.0">
+                <arguments xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.9"/>
+                <arguments xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.9"/>
+                <arguments xsi:type="java:SingleVariableAccess" variable="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@parameters.3"/>
+                <arguments xsi:type="java:SingleVariableAccess" variable="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@parameters.3"/>
+                <type type="//@orphanTypes.18"/>
+              </arguments>
+              <expression xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.13"/>
+            </expression>
+          </statements>
+        </body>
+        <parameters originalCompilationUnit="//@compilationUnits.0" name="resourceSupplier">
+          <modifier/>
+          <type type="//@orphanTypes.11"/>
+        </parameters>
+        <parameters originalCompilationUnit="//@compilationUnits.0" name="sourceSupplier">
+          <modifier/>
+          <type type="//@orphanTypes.14"/>
+        </parameters>
+        <parameters originalCompilationUnit="//@compilationUnits.0" name="disposer">
+          <modifier/>
+          <type type="//@orphanTypes.18"/>
+        </parameters>
+        <parameters originalCompilationUnit="//@compilationUnits.0" name="eager" usageInVariableAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.3/@expression/@arguments.0/@arguments.3">
+          <modifier/>
+          <type type="//@orphanTypes.4"/>
+        </parameters>
+        <typeParameters originalCompilationUnit="//@compilationUnits.0" name="T" usagesInTypeAccess="//@orphanTypes.9/@typeArguments.0 //@orphanTypes.10/@bound //@orphanTypes.14/@bound //@orphanTypes.18/@typeArguments.1"/>
+        <returnType type="//@orphanTypes.9"/>
+      </bodyDeclarations>
+    </ownedElements>
+  </ownedElements>
+  <ownedElements name="java" proxy="true">
+    <ownedPackages name="lang" proxy="true">
+      <ownedElements xsi:type="java:ClassDeclaration" name="Object" proxy="true">
+        <bodyDeclarations xsi:type="java:ConstructorDeclaration" name="Object" proxy="true" usages="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.3/@expression/@arguments.0"/>
+      </ownedElements>
+    </ownedPackages>
+  </ownedElements>
+  <orphanTypes xsi:type="java:PrimitiveTypeInt" name="int"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeLong" name="long"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeFloat" name="float"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeDouble" name="double"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeBoolean" name="boolean" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@parameters.3/@type"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeVoid" name="void"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeChar" name="char"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeShort" name="short"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeByte" name="byte"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeByte" name="byte"/>
+  <orphanTypes xsi:type="java:ParameterizedType" name="Observable&lt;T>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@returnType">
+    <type type="//@unresolvedItems.3"/>
+    <typeArguments type="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.0"/>
+  <orphanTypes xsi:type="java:ParameterizedType" name="Callable&lt;? extends D>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@parameters.0/@type">
+    <type type="//@unresolvedItems.4"/>
+    <typeArguments type="//@orphanTypes.10"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:WildCardType" name="? super D" usagesInTypeAccess="//@orphanTypes.11/@typeArguments.0 //@orphanTypes.14/@typeArguments.0 //@orphanTypes.18/@typeArguments.0">
+    <bound type="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.1"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:WildCardType" name="? super D" usagesInTypeAccess="//@orphanTypes.11/@typeArguments.0 //@orphanTypes.14/@typeArguments.0 //@orphanTypes.18/@typeArguments.0">
+    <bound type="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.1"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="ObservableSource&lt;? extends T>" usagesInTypeAccess="//@orphanTypes.15/@bound">
+    <type type="//@unresolvedItems.6"/>
+    <typeArguments type="//@orphanTypes.13"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:WildCardType" name="? extends T" usagesInTypeAccess="//@orphanTypes.14/@typeArguments.0" upperBound="true">
+    <bound type="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.0"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="Function&lt;? super D,? extends ObservableSource&lt;? extends T>" usagesInTypeAccess="//@orphanTypes.16/@typeArguments.1">
+    <type type="//@unresolvedItems.5"/>
+    <typeArguments type="//@orphanTypes.11"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="Function&lt;? super D,? extends ObservableSource&lt;? extends T>" usagesInTypeAccess="//@orphanTypes.17/@typeArguments.1">
+    <type type="//@unresolvedItems.5"/>
+    <typeArguments type="//@orphanTypes.11"/>
+    <typeArguments type="//@orphanTypes.14"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:WildCardType" name="? super D" usagesInTypeAccess="//@orphanTypes.18/@typeArguments.0">
+    <bound type="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.1"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="Function&lt;? super D,? extends ObservableSource&lt;? extends T>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@parameters.1/@type">
+    <type type="//@unresolvedItems.4"/>
+    <typeArguments type="//@orphanTypes.11"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="Consumer&lt;? super D>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@parameters.2/@type">
+    <type type="//@unresolvedItems.6"/>
+    <typeArguments type="//@orphanTypes.11"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="ObservableUsing&lt;T,D>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.3/@expression/@arguments.0/@type">
+    <type type="//@unresolvedItems.15"/>
+    <typeArguments type="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.0"/>
+    <typeArguments type="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.1"/>
+  </orphanTypes>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="CheckReturnValue" proxy="true" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@typeParameters.0/@bounds.0"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="SchedulerSupport" proxy="true" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@annotations.1/@type"/>
+  <unresolvedItems name="NONE" proxy="true"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="Observable" proxy="true" usagesInTypeAccess="//@orphanTypes.9/@type"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="Callable" proxy="true" usagesInTypeAccess="//@orphanTypes.11/@type"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="Function" proxy="true" usagesInTypeAccess="//@orphanTypes.14/@type"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="ObservableSource" proxy="true" usagesInTypeAccess="//@orphanTypes.15/@type"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="Consumer" proxy="true" usagesInTypeAccess="//@orphanTypes.18/@type"/>
+  <unresolvedItems name="ObjectHelper" proxy="true"/>
+  <unresolvedItems xsi:type="java:UnresolvedMethodDeclaration" name="requireNonNull" proxy="true" usages="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.0/@expression //@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.1/@expression //@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.2/@expression"/>
+  <unresolvedItems name="resourceSupplier" proxy="true"/>
+  <unresolvedItems name="resourceSupplier" proxy="true"/>
+  <unresolvedItems name="sourceSupplier" proxy="true"/>
+  <unresolvedItems name="disposer" proxy="true"/>
+  <unresolvedItems name="RxJavaPlugins" proxy="true"/>
+  <unresolvedItems xsi:type="java:UnresolvedMethodDeclaration" name="onAssembly" proxy="true" usages="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.3/@expression"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="ObservableUsing" proxy="true" usagesInTypeAccess="//@orphanTypes.19/@type"/>
+  <compilationUnits name="TargetClass.java" originalFilePath="C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\TargetProject\src\targetpackage\TargetClass.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.0"/>
+</java:Model>
+</s>
