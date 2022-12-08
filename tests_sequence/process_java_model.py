@@ -29,9 +29,7 @@ def generate_sequence(example):
     generate_sequence.root = ET.fromstring(xmi)
 
     body_declaration = generate_sequence.root.find(
-        "."
-        # "/ownedElements[@name='targetpackage']"
-        "/ownedElements"
+        "ownedElements"
         f"/ownedElements[@{NS_XSI}type='java:ClassDeclaration']"
         f"/bodyDeclarations[@{NS_XSI}type='java:MethodDeclaration']"
     )
