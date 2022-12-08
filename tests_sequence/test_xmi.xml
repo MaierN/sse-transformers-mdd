@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<java:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java" name="TargetProject">
+  <ownedElements name="targetpackage">
+    <ownedElements xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.0" name="TargetClass">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:MethodDeclaration" originalCompilationUnit="//@compilationUnits.0" name="setServletRegistrationBeans">
+        <modifier visibility="public"/>
+        <body originalCompilationUnit="//@compilationUnits.0">
+          <statements xsi:type="java:ExpressionStatement" originalCompilationUnit="//@compilationUnits.0">
+            <expression xsi:type="java:MethodInvocation" originalCompilationUnit="//@compilationUnits.0" method="//@unresolvedItems.3">
+              <arguments xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.4"/>
+              <arguments xsi:type="java:StringLiteral" originalCompilationUnit="//@compilationUnits.0" escapedValue="&quot;ServletRegistrationBeans must not be null&quot;"/>
+              <expression xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.2"/>
+            </expression>
+          </statements>
+          <statements xsi:type="java:ExpressionStatement" originalCompilationUnit="//@compilationUnits.0">
+            <expression xsi:type="java:Assignment" originalCompilationUnit="//@compilationUnits.0">
+              <leftHandSide xsi:type="java:FieldAccess" originalCompilationUnit="//@compilationUnits.0">
+                <field variable="//@unresolvedItems.5"/>
+                <expression xsi:type="java:ThisExpression" originalCompilationUnit="//@compilationUnits.0"/>
+              </leftHandSide>
+              <rightHandSide xsi:type="java:ClassInstanceCreation" originalCompilationUnit="//@compilationUnits.0" method="//@unresolvedItems.7">
+                <arguments xsi:type="java:UnresolvedItemAccess" element="//@unresolvedItems.5"/>
+                <type type="//@orphanTypes.13"/>
+              </rightHandSide>
+            </expression>
+          </statements>
+        </body>
+        <parameters originalCompilationUnit="//@compilationUnits.0" name="servletRegistrationBeans">
+          <modifier/>
+          <type type="//@orphanTypes.12"/>
+        </parameters>
+        <returnType type="//@orphanTypes.5"/>
+      </bodyDeclarations>
+    </ownedElements>
+  </ownedElements>
+  <orphanTypes xsi:type="java:PrimitiveTypeInt" name="int"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeLong" name="long"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeFloat" name="float"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeDouble" name="double"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeBoolean" name="boolean"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeVoid" name="void" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@returnType"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeChar" name="char"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeShort" name="short"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeByte" name="byte"/>
+  <orphanTypes xsi:type="java:WildCardType" name="?" usagesInTypeAccess="//@orphanTypes.10/@typeArguments.0" upperBound="true"/>
+  <orphanTypes xsi:type="java:ParameterizedType" name="ServletRegistrationBean&lt;?>" usagesInTypeAccess="//@orphanTypes.11/@bound">
+    <type type="//@unresolvedItems.1"/>
+    <typeArguments type="//@orphanTypes.9"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:WildCardType" name="? extends ServletRegistrationBean&lt;?>" usagesInTypeAccess="//@orphanTypes.12/@typeArguments.0" upperBound="true">
+    <bound type="//@orphanTypes.10"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="Collection&lt;? extends ServletRegistrationBean&lt;?>>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@parameters.0/@type">
+    <type type="//@unresolvedItems.0"/>
+    <typeArguments type="//@orphanTypes.11"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="LinkedHashSet&lt;>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.1/@expression/@rightHandSide/@type">
+    <type type="//@unresolvedItems.6"/>
+  </orphanTypes>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="Collection" proxy="true" usagesInTypeAccess="//@orphanTypes.12/@type"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="ServletRegistrationBean" proxy="true" usagesInTypeAccess="//@orphanTypes.10/@type"/>
+  <unresolvedItems name="Assert" proxy="true"/>
+  <unresolvedItems xsi:type="java:UnresolvedMethodDeclaration" name="notNull" proxy="true" usages="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.0/@expression"/>
+  <unresolvedItems name="servletRegistrationBeans" proxy="true"/>
+  <unresolvedItems xsi:type="java:UnresolvedVariableDeclarationFragment" name="servletRegistrationBeans" proxy="true" usageInVariableAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.1/@expression/@leftHandSide/@field"/>
+  <unresolvedItems xsi:type="java:UnresolvedTypeDeclaration" name="LinkedHashSet" proxy="true" usagesInTypeAccess="//@orphanTypes.13/@type"/>
+  <unresolvedItems xsi:type="java:UnresolvedMethodDeclaration" name="new LinkedHashSet&lt;>(servletRegistrationBeans)" proxy="true" usages="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@body/@statements.1/@expression/@rightHandSide"/>
+  <compilationUnits name="TargetClass.java" originalFilePath="C:\Users\Nic\Documents\my_documents\unifr\seminar_software_engineering\sse-transformers-mdd\workspace_target\TargetProject\src\targetpackage\TargetClass.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.0"/>
+</java:Model>

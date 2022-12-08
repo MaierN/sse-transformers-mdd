@@ -39,7 +39,7 @@ def generate_sequence(example):
     )
     body = body_declaration.find("body")
     for _parameters in body_declaration.findall("parameters"):
-        pass  # TODO add to scope
+        pass
 
     res = process_elt(body)
 
@@ -47,15 +47,20 @@ def generate_sequence(example):
 
 
 generate_sequence.root = None
-generate_sequence.problem = False
+generate_sequence.problem = False  # todo replace with raise exception
 
 
+@printi_depth
 def find_element_by_model_path(path):
+    # printi("find_by_path", path)
+
     if not path.startswith("//"):
         print("weird path", path)
     path = path[2:]
 
     curr_elt = generate_sequence.root
+
+    full_path = []
 
     for part in path.split("/"):
         if not path.startswith("@"):
@@ -65,7 +70,13 @@ def find_element_by_model_path(path):
         elt_tag = part[0]
         elt_idx = int(part[1]) if len(part) > 1 else 0
 
+        new_elt = curr_elt.findall(elt_tag)[elt_idx]
+        if new_elt.tag == "ownedPackages":
+            full_path.append(curr_elt.get("name"))
         curr_elt = curr_elt.findall(elt_tag)[elt_idx]
+
+    full_path.append(curr_elt.get("name"))
+    curr_elt.set("fullpath", ".".join(full_path))
 
     return curr_elt
 
@@ -188,13 +199,20 @@ def get_to_path(elt):
     if elt_type == "java:UnresolvedItemAccess":
         to = [find_element_by_model_path(elt.get("element")).get("name")]
     elif elt_type == "java:SingleVariableAccess":
-        to = [find_element_by_model_path(elt.get("variable")).get("name")]
+        variable = elt.get("variable")
+        if variable is not None:
+            to = [find_element_by_model_path(elt.get("variable")).get("name")]
+        else:
+            return None
     elif elt_type in [
         "java:MethodInvocation",
+        "java:SuperMethodInvocation",
         "java:ClassInstanceCreation",
         "java:StringLiteral",
+        "java:NullLiteral",
         "java:ArrayAccess",
         "java:InfixExpression",
+        "java:ConditionalExpression",
     ]:
         return None
     elif elt_type == "java:ThisExpression":
@@ -211,6 +229,8 @@ def get_to_path(elt):
         if qualifier is not None:
             elt = qualifier
             to += [find_element_by_model_path(elt.get("type")).get("name")]
+        else:
+            elt = None
         if field is not None:
             to += [find_element_by_model_path(field.get("variable")).get("name")]
     elif elt_type == "java:TypeAccess":
@@ -219,13 +239,25 @@ def get_to_path(elt):
         return get_to_path(elt.find("expression"))
     elif elt_type == "java:CastExpression":
         return get_to_path(elt.find("expression"))
+    elif elt_type == "java:TypeLiteral":
+        type_literal = elt.find("type")
+        return [
+            find_element_by_model_path(type_literal.get("type")).get("name"),
+            "class",
+        ]
+    elif elt_type == "java:PackageAccess":
+        return [find_element_by_model_path(elt.get("package")).get("fullpath")]
+    elif elt_type == "java:Assignment":
+        left_hand_side = elt.find("leftHandSide")
+        return get_to_path(left_hand_side)
     else:
         print("### PROBLEM get_to_path:", elt, elt.items())
         generate_sequence.problem = True
         return None
 
     child_to = []
-    children = elt.findall("*")
+    children = elt.findall("*") if elt is not None else []
+    children = [child for child in filter_iter(children)]
     if len(children) > 0:
         child = children[-1]
         child_to = get_to_path(child)
@@ -271,13 +303,19 @@ def process_ExpressionStatement(elt, itr):
 def process_EnhancedForStatement(elt, itr):
     body = next_elt(itr, "body")
     expression = next_elt(itr, "expression")
-    _param = next_elt(itr, "parameter")
-    # TODO param add new variable to scope
+    param = next_elt(itr, "parameter")
 
     return process_elt(expression) + [
         {
-            "type": "enhancedFor",
-            "contents": process_elt(body),
+            "type": "blocks",
+            "blocks": [
+                {
+                    "name": "for",
+                    "guard": "TODO",
+                    "contents": [{"type": "scopedVariable", "name": param.get("name")}]
+                    + process_elt(body),
+                }
+            ],
         }
     ]
 
@@ -299,11 +337,14 @@ def process_MethodInvocation(elt, itr):
     else:
         to = []
 
+    method = elt.get("method")
     return res + [
         {
             "type": "methodInvocation",
             "to": to if to is not None else "### unk",
-            "method": find_element_by_model_path(elt.get("method")).get("name"),
+            "method": find_element_by_model_path(elt.get("method")).get("name")
+            if method is not None
+            else "### unk",
         }
     ]
 
@@ -324,11 +365,14 @@ def process_SuperMethodInvocation(elt, itr):
     for arguments in get_many(itr, "arguments"):
         res += process_elt(arguments)
 
+    method = elt.get("method")
     return res + [
         {
-            "type": "superMethodInvocation",
+            "type": "methodInvocation",
             "to": to if to is not None else "### unk",
-            "method": find_element_by_model_path(elt.get("method")).get("name"),
+            "method": find_element_by_model_path(elt.get("method")).get("name")
+            if method is not None
+            else "### unk",
         }
     ]
 
@@ -348,7 +392,7 @@ def process_SuperConstructorInvocation(elt, itr):
         res += process_elt(arguments)
     return res + [
         {
-            "type": "superConstructorInvocation",
+            "type": "methodInvocation",
             "to": to if to is not None else "### unk",
         }
     ]
@@ -359,11 +403,27 @@ def process_IfStatement(elt, itr):
     then_block = next_elt(itr, "thenStatement")
     else_block = get_maybe(itr, "elseStatement")
 
+    blocks = [
+        {
+            "name": "if",
+            "guard": "TODO",
+            "contents": process_elt(then_block),
+        }
+    ]
+
+    if else_block is not None:
+        blocks += [
+            {
+                "name": "else",
+                "guard": "TODO",
+                "contents": process_elt(else_block),
+            }
+        ]
+
     return process_elt(expression) + [
         {
-            "type": "ifStatement",
-            "contents_then": process_elt(then_block),
-            "contents_else": process_elt(else_block) if else_block else [],
+            "type": "blocks",
+            "blocks": blocks,
         }
     ]
 
@@ -388,7 +448,10 @@ def process_ReturnStatement(elt, itr):
 def process_Assignment(elt, itr):
     _left_hand_side = next_elt(itr, "leftHandSide")
     right_hand_side = next_elt(itr, "rightHandSide")
-    # TODO left_hand_side add new variable to scope
+    # INFO maybe this should be a new scoped variable
+    # return process_elt(right_hand_side) + [
+    #     {"type": "scopedVariable", "name": get_to_path(left_hand_side)}
+    # ]
     return process_elt(right_hand_side)
 
 
@@ -405,9 +468,7 @@ def process_ClassInstanceCreation(elt, itr):
 
     method = find_element_by_model_path(elt.get("method"))
 
-    return res + [
-        {"type": "newInstance", "constructor": method.get("name")}
-    ]  # TODO add to info
+    return res + [{"type": "newInstance", "constructor": method.get("name")}]
 
 
 def process_FieldAccess(elt, itr):
@@ -435,17 +496,48 @@ def process_UnresolvedItemAccess(elt, itr):
 
 def process_VariableDeclarationStatement(elt, itr):
     res = []
+    res_scoped_variables = []
+
     _variable_type = next_elt(itr, "type")
+
     for fragments in get_many(itr, "fragments"):
+        res_scoped_variables.append(
+            {"type": "scopedVariable", "name": fragments.get("name")}
+        )
+
         fragments = filter_iter(fragments)
         initializer = get_maybe(fragments, "initializer")
         if initializer is not None:
             res += process_elt(initializer)
+
     _modifier = next_elt(itr, "modifier")
     for _annotations in get_many(itr, "annotations"):
         pass
-    # TODO add new variable to scope
-    return res
+
+    return res + res_scoped_variables
+
+
+def process_VariableDeclarationExpression(elt, itr):
+    res = []
+    res_scoped_variables = []
+
+    _variable_type = next_elt(itr, "type")
+
+    for fragments in get_many(itr, "fragments"):
+        res_scoped_variables.append(
+            {"type": "scopedVariable", "name": fragments.get("name")}
+        )
+
+        fragments = filter_iter(fragments)
+        initializer = get_maybe(fragments, "initializer")
+        if initializer is not None:
+            res += process_elt(initializer)
+
+    _modifier = next_elt(itr, "modifier")
+    for _annotations in get_many(itr, "annotations"):
+        pass
+
+    return res + res_scoped_variables
 
 
 def process_PrefixExpression(elt, itr):
@@ -459,9 +551,19 @@ def process_ConditionalExpression(elt, itr):
     then_expr = next_elt(itr, "thenExpression")
     return process_elt(cond_expr) + [
         {
-            "type": "ifExpression",
-            "contents_then": process_elt(then_expr),
-            "contents_else": process_elt(else_expr),
+            "type": "blocks",
+            "blocks": [
+                {
+                    "name": "if",
+                    "guard": "TODO",
+                    "contents": process_elt(then_expr),
+                },
+                {
+                    "name": "else",
+                    "guard": "TODO",
+                    "contents": process_elt(else_expr),
+                },
+            ],
         }
     ]
 
@@ -476,8 +578,14 @@ def process_SynchronizedStatement(elt, itr):
     expression = next_elt(itr, "expression")
     return process_elt(expression) + [
         {
-            "type": "synchronized",
-            "contents": process_elt(body),
+            "type": "blocks",
+            "blocks": [
+                {
+                    "name": "synchronized",
+                    "guard": "TODO",
+                    "contents": process_elt(body),
+                }
+            ],
         }
     ]
 
@@ -499,10 +607,33 @@ def process_TryStatement(elt, itr):
         catch_res.append(process_elt(catch_body))
     return [
         {
-            "type": "try",
-            "contents_try": process_elt(body),
-            "contents_catch": catch_res,
-            "contents_finally": process_elt(finally_clause) if finally_clause else [],
+            "type": "blocks",
+            "blocks": [
+                {
+                    "name": "try",
+                    "guard": "TODO",
+                    "contents": process_elt(body),
+                },
+            ]
+            + [
+                {
+                    "name": "catch",
+                    "guard": "TODO",
+                    "contents": catch,
+                }
+                for catch in catch_res
+            ]
+            + (
+                [
+                    {
+                        "name": "finally",
+                        "guard": "TODO",
+                        "contents": process_elt(finally_clause),
+                    }
+                ]
+                if finally_clause
+                else []
+            ),
         }
     ]
 
@@ -514,7 +645,8 @@ def process_TypeLiteral(elt, itr):
 
 def process_ThrowStatement(elt, itr):
     expression = next_elt(itr, "expression")
-    return process_elt(expression) + [{"type": "throw"}]
+    # return process_elt(expression) + [{"type": "throw"}]
+    return process_elt(expression) + [{"type": "controlFlow", "name": "throw"}]
 
 
 def process_InstanceofExpression(elt, itr):
@@ -541,8 +673,14 @@ def process_WhileStatement(elt, itr):
     body = next_elt(itr, "body")
     return process_elt(expression) + [
         {
-            "type": "whileStatement",
-            "contents": process_elt(body),
+            "type": "blocks",
+            "blocks": [
+                {
+                    "name": "while",
+                    "guard": "TODO",
+                    "contents": process_elt(body),
+                }
+            ],
         }
     ]
 
@@ -556,13 +694,26 @@ def process_ForStatement(elt, itr):
     for initializers in get_many(itr, "initializers"):
         res_initializers += process_elt(initializers)
     body = next_elt(itr, "body")
-    # TODO add new variables to scope
-    return res_initializers + [
+
+    return [
         {
-            "type": "forStatement",
-            "contents_cond": process_elt(cond_expr) if cond_expr is not None else [],
-            "contents_updater": res_updaters,
-            "contents": process_elt(body),
+            "type": "blocks",
+            "blocks": [
+                {
+                    "name": "for init",
+                    "guard": "TODO",
+                    "contents": res_initializers,
+                },
+                {
+                    "name": "for",
+                    "guard": "TODO",
+                    "contents": (
+                        process_elt(cond_expr) if cond_expr is not None else []
+                    )
+                    + process_elt(body)
+                    + res_updaters,
+                },
+            ],
         }
     ]
 
@@ -570,21 +721,6 @@ def process_ForStatement(elt, itr):
 def process_PostfixExpression(elt, itr):
     operand = next_elt(itr, "operand")
     return process_elt(operand)
-
-
-def process_VariableDeclarationExpression(elt, itr):
-    res = []
-    _variable_type = next_elt(itr, "type")
-    for fragments in get_many(itr, "fragments"):
-        fragments = filter_iter(fragments)
-        initializer = get_maybe(fragments, "initializer")
-        if initializer is not None:
-            res += process_elt(initializer)
-    _modifier = next_elt(itr, "modifier")
-    for _annotations in get_many(itr, "annotations"):
-        pass
-    # TODO add new variable to scope
-    return res
 
 
 def process_ArrayLengthAccess(elt, itr):
@@ -606,7 +742,7 @@ def process_SingleVariableAccess(elt, itr):
 
 
 def process_SwitchStatement(elt, itr):
-    # TODO switch should be a block
+    # INFO switch should be a block
     expression = next_elt(itr, "expression")
     res = []
     for statements in get_many(itr, "statements"):
@@ -622,11 +758,13 @@ def process_SwitchCase(elt, itr):
 
 
 def process_BreakStatement(elt, itr):
-    return [{"type": "break"}]
+    # return [{"type": "break"}]
+    return [{"type": "controlFlow", "name": "break"}]
 
 
 def process_ContinueStatement(elt, itr):
-    return [{"type": "continue"}]
+    # return [{"type": "continue"}]
+    return [{"type": "controlFlow", "name": "continue"}]
 
 
 def process_DoStatement(elt, itr):
@@ -634,8 +772,14 @@ def process_DoStatement(elt, itr):
     body = next_elt(itr, "body")
     return process_elt(expression) + [
         {
-            "type": "doStatement",
-            "contents": process_elt(body),
+            "type": "blocks",
+            "blocks": [
+                {
+                    "name": "do while",
+                    "guard": "TODO",
+                    "contents": process_elt(body),
+                }
+            ],
         }
     ]
 
@@ -650,11 +794,12 @@ def process_ArrayInitializer(elt, itr):
 def process_AssertStatement(elt, itr):
     message = get_maybe(itr, "message")
     expression = next_elt(itr, "expression")
-    return {
-        "type": "assert",
-        "message": process_elt(message) if message is not None else [],
-        "contents": process_elt(expression),
-    }
+    # return [{
+    #     "type": "assert",
+    #     "message": process_elt(message) if message is not None else [],
+    #     "contents": process_elt(expression),
+    # }]
+    return []
 
 
 def process_TypeAccess(elt, itr):
