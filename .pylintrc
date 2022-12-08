@@ -422,6 +422,7 @@ disable=raw-checker-failed,
         missing-class-docstring,
         unused-argument,
         fixme,
+        broad-except,
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option

@@ -23,23 +23,23 @@ def printi_depth(func):
     return wrapper
 
 
-def generate_sequence(example):
-    xmi = example["xmi"]
+def generate_sequence(xmi_string):
+    try:
+        generate_sequence.root = ET.fromstring(xmi_string)
 
-    generate_sequence.root = ET.fromstring(xmi)
+        body_declaration = generate_sequence.root.find(
+            "ownedElements"
+            f"/ownedElements[@{NS_XSI}type='java:ClassDeclaration']"
+            f"/bodyDeclarations[@{NS_XSI}type='java:MethodDeclaration']"
+        )
+        body = body_declaration.find("body")
+        for _parameters in body_declaration.findall("parameters"):
+            pass
 
-    body_declaration = generate_sequence.root.find(
-        "ownedElements"
-        f"/ownedElements[@{NS_XSI}type='java:ClassDeclaration']"
-        f"/bodyDeclarations[@{NS_XSI}type='java:MethodDeclaration']"
-    )
-    body = body_declaration.find("body")
-    for _parameters in body_declaration.findall("parameters"):
-        pass
-
-    res = process_elt(body)
-
-    return res
+        return process_elt(body)
+    except Exception as e:
+        print("exception:", e)
+        return []
 
 
 generate_sequence.root = None
