@@ -1,0 +1,35 @@
+[
+  {
+    "type": "scopedVariable",
+    "name": "currentSize"
+  },
+  {
+    "type": "methodInvocation",
+    "to": [
+      "binaryDataChunks"
+    ],
+    "method": "get"
+  },
+  {
+    "type": "blocks",
+    "blocks": [
+      {
+        "name": "while",
+        "guard": "pos >= (currentSize = length)",
+        "contents": []
+      }
+    ]
+  },
+  {
+    "type": "methodInvocation",
+    "to": [
+      "binaryDataChunks"
+    ],
+    "method": "get"
+  },
+  {
+    "type": "scopedVariable",
+    "name": "relativePosition"
+  },
+  "return"
+]
