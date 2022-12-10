@@ -331,7 +331,12 @@ def get_guard_name(elt):
     elif elt_type == "java:Assignment":
         left = elt.find("leftHandSide")
         right = elt.find("rightHandSide")
-        return f"{get_guard_name(left)} = {get_guard_name(right)}"
+        operator = elt.get("operator")
+        return (
+            f"{get_guard_name(left)} "
+            f"{operator if operator is not None else '='} "
+            f"{get_guard_name(right)}"
+        )
     elif elt_type == "java:BooleanLiteral":
         return elt.get("value")
     elif elt_type == "java:ConditionalExpression":
@@ -523,7 +528,12 @@ def process_ReturnStatement(elt, itr):
     expression = get_maybe(itr, "expression")
     if expression is not None:
         contents += process_elt(expression)
-    return contents + ["return"]
+    return contents + [
+        {
+            "type": "return",
+            "value": get_guard_name(expression) if expression is not None else None,
+        }
+    ]
 
 
 def process_Assignment(elt, itr):

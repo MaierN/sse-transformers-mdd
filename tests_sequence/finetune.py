@@ -15,11 +15,11 @@ print(torch.cuda.is_available())
 tokenizer = RobertaTokenizer.from_pretrained("Salesforce/codet5-small")
 model = T5ForConditionalGeneration.from_pretrained("Salesforce/codet5-small")
 
-dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset")
+dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_2")
 dataset = dataset.remove_columns(["code", "contents", "xmi", "originalLine", "seq"])
 print(dataset)
 
-BATCH_SIZE = 12
+BATCH_SIZE = 10
 
 args = Seq2SeqTrainingArguments(
     output_dir="/data/nicolasmaier/model/codet5-finetuned-seq-4",
@@ -32,8 +32,8 @@ args = Seq2SeqTrainingArguments(
     learning_rate=5e-5,
     weight_decay=0.0,
     per_device_train_batch_size=BATCH_SIZE,
-    per_device_eval_batch_size=8,
-    gradient_accumulation_steps=2,
+    per_device_eval_batch_size=BATCH_SIZE,
+    #gradient_accumulation_steps=2,
     warmup_steps=1000,
     save_total_limit=1000,
     num_train_epochs=5, # 100?

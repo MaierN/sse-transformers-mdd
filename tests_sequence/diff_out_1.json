@@ -1,35 +1,105 @@
 [
   {
-    "type": "scopedVariable",
-    "name": "currentSize"
-  },
-  {
-    "type": "methodInvocation",
-    "to": [
-      "binaryDataChunks"
-    ],
-    "method": "get"
-  },
-  {
     "type": "blocks",
     "blocks": [
       {
-        "name": "while",
-        "guard": "pos >= (currentSize = length)",
-        "contents": []
+        "name": "if",
+        "guard": "name!= null",
+        "contents": [
+          {
+            "type": "methodInvocation",
+            "to": [
+              "unit"
+            ],
+            "method": "getAttachment"
+          },
+          {
+            "type": "scopedVariable",
+            "name": "jbossWebserviceMetaData"
+          },
+          {
+            "type": "blocks",
+            "blocks": [
+              {
+                "name": "if",
+                "guard": "jbossWebserviceMetaData!= null",
+                "contents": [
+                  {
+                    "type": "methodInvocation",
+                    "to": [
+                      "jbossWebserviceMetaData"
+                    ],
+                    "method": "getPortComponents"
+                  },
+                  {
+                    "type": "scopedVariable",
+                    "name": "portComponent"
+                  },
+                  {
+                    "type": "blocks",
+                    "blocks": [
+                      {
+                        "name": "if",
+                        "guard": "portComponent!= null",
+                        "contents": [
+                          {
+                            "type": "blocks",
+                            "blocks": [
+                              {
+                                "name": "for",
+                                "guard": "component in portComponent",
+                                "contents": [
+                                  {
+                                    "type": "scopedVariable",
+                                    "name": "component"
+                                  },
+                                  {
+                                    "type": "methodInvocation",
+                                    "to": [
+                                      "component"
+                                    ],
+                                    "method": "getEjbName"
+                                  },
+                                  {
+                                    "type": "methodInvocation",
+                                    "to": [
+                                      "name"
+                                    ],
+                                    "method": "equals"
+                                  },
+                                  {
+                                    "type": "blocks",
+                                    "blocks": [
+                                      {
+                                        "name": "if",
+                                        "guard": "[...].equals([...])",
+                                        "contents": [
+                                          {
+                                            "type": "return",
+                                            "value": "component"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   {
-    "type": "methodInvocation",
-    "to": [
-      "binaryDataChunks"
-    ],
-    "method": "get"
-  },
-  {
-    "type": "scopedVariable",
-    "name": "relativePosition"
-  },
-  "return"
+    "type": "return",
+    "value": "null"
+  }
 ]
