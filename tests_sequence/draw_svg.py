@@ -155,7 +155,6 @@ def replace_alt(elt):
 
 def draw_svg(seq):
     seq_text = draw_sequence_diagram(seq)
-    print("##", seq_text)
     return render_sequence_diagram(seq_text)
 
 

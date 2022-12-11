@@ -1,34 +1,37 @@
+import json
 from datasets import load_from_disk
 from transformers import (
     RobertaTokenizer,
     T5ForConditionalGeneration,
 )
 import torch
-import random
-import json
 from draw_svg import *
 
 torch.set_num_threads(16)
 
 tokenizer = RobertaTokenizer.from_pretrained("Salesforce/codet5-small")
-model = T5ForConditionalGeneration.from_pretrained(
-    "/data/nicolasmaier/model/codet5-finetuned-seq-4/checkpoint-27000"
-)
+model = T5ForConditionalGeneration.from_pretrained("/data/nicolasmaier/model/ended-3")
 
-device = "cpu"  # 'cuda:0' if torch.cuda.is_available() else 'cpu'
+# device = "cpu"
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
 print(device)
 model_gpu = model.to(device)
 
-dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_2")
+dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_3")
 print(dataset)
 
 for i in range(10):
     example_orig = dataset["test"][i * 1000]
 
+    print(i)
     print(example_orig["originalLine"])
-    print(example_orig["contents"])
+    # print(example_orig["code"])
 
-    model_input = tokenizer(example_orig["contents"], return_tensors="pt").to(device)
+    with open(f"out/real{i}.svg", "wb") as f:
+        ground_truth = tokenizer.decode(example_orig["labels"][1:-1])
+        f.write(draw_svg(json.loads(ground_truth)))
+
+    model_input = tokenizer(example_orig["code"], return_tensors="pt").to(device)
 
     print("generating...")
     outputs = model_gpu.generate(
@@ -46,14 +49,20 @@ for i in range(10):
     while seq_text is None:
         try:
             seq_text = json.loads(model_output)
-        except json.decoder.JSONDecodeError:
-            model_output = model_output[:-1]
+        except json.decoder.JSONDecodeError as e:
+            if e.msg == "Extra data":
+                print("warning: extra data in", model_output)
+                model_output = model_output[: e.pos]
+            else:
+                print("error:")
+                print(model_output)
+                raise e
 
-    print(seq_text)
+    # print(seq_text)
     print("drawing...")
     svg = draw_svg(seq_text)
 
-    with open(f"out/example{i}.svg", "w", encoding="utf-8") as f:
+    with open(f"out/model{i}.svg", "wb") as f:
         f.write(svg)
 
     print("done")
