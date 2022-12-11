@@ -43,7 +43,6 @@ def generate_sequence(xmi_string):
         }
     except Exception as e:
         print("exception:", e)
-        raise e
         return None
 
 

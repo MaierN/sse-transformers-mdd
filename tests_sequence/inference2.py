@@ -4,14 +4,12 @@ from draw_svg import *
 
 dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_2")
 
-idx = 22008
+idx = 11021
 example = dataset["test"][idx]
 
 print(example["code"])
 
 xmi = example["xmi"]
-with open("test_xmi.xml", "r") as f:
-    xmi = f.read()
 
 seq = generate_sequence(xmi)
 

@@ -15,14 +15,14 @@ print(torch.cuda.is_available())
 tokenizer = RobertaTokenizer.from_pretrained("Salesforce/codet5-small")
 model = T5ForConditionalGeneration.from_pretrained("Salesforce/codet5-small")
 
-dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_2")
+dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_3")
 dataset = dataset.remove_columns(["code", "contents", "xmi", "originalLine", "seq"])
 print(dataset)
 
 BATCH_SIZE = 10
 
 args = Seq2SeqTrainingArguments(
-    output_dir="/data/nicolasmaier/model/codet5-finetuned-seq-4",
+    output_dir="/data/nicolasmaier/model/codet5-seq-3",
     evaluation_strategy="steps",
     eval_steps=1000,
     logging_strategy="steps",
@@ -38,7 +38,7 @@ args = Seq2SeqTrainingArguments(
     save_total_limit=1000,
     num_train_epochs=5, # 100?
     predict_with_generate=True,
-    # load_best_model_at_end=True,
+    load_best_model_at_end=True,
     # metric_for_best_model="EM", # or BLEU?
     seed=SEED,
     report_to="tensorboard",
@@ -51,10 +51,12 @@ trainer = Seq2SeqTrainer(
     model,
     args,
     train_dataset=dataset["train"].shuffle(seed=SEED).select(range(300_000)),
-    eval_dataset=dataset["valid"].shuffle(seed=SEED).select(range(1000)),
+    eval_dataset=dataset["valid"].shuffle(seed=SEED).select(range(3000)),
     data_collator=data_collator,
     tokenizer=tokenizer,
 )
 
 print("starting training")
 trainer.train()
+
+trainer.save_model("/data/nicolasmaier/model/ended-3")
