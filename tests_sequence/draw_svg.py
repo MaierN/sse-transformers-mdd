@@ -156,26 +156,3 @@ def replace_alt(elt):
 def draw_svg(seq):
     seq_text = draw_sequence_diagram(seq)
     return render_sequence_diagram(seq_text)
-
-
-def main():
-
-    with open("test_xmi.xml", encoding="utf-8") as f:
-        xmi = f.read()
-
-    seq = generate_sequence(xmi)
-    print(json.dumps(seq, indent=2))
-
-    seq_text = draw_sequence_diagram(seq)
-    print(seq_text)
-
-    seq_svg = render_sequence_diagram(seq_text)
-
-    with open("out/out.svg", "w", encoding="utf-8") as f:
-        f.write(seq_svg)
-
-
-if __name__ == "__main__":
-    from process_java_model import *
-
-    main()
