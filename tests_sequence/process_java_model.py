@@ -33,13 +33,18 @@ def generate_sequence(xmi_string):
             f"/bodyDeclarations[@{NS_XSI}type='java:MethodDeclaration']"
         )
         body = body_declaration.find("body")
-        for _parameters in body_declaration.findall("parameters"):
-            pass
+        params = []
+        for parameters in body_declaration.findall("parameters"):
+            params.append(parameters.get("name"))
 
-        return process_elt(body)
+        return {
+            "title": f"{body_declaration.get('name')}({', '.join(params)})",
+            "sequence": process_elt(body),
+        }
     except Exception as e:
         print("exception:", e)
-        return []
+        raise e
+        return None
 
 
 generate_sequence.root = None
@@ -276,15 +281,25 @@ def get_guard_name(elt):
     elif (
         elt_type == "java:MethodInvocation" or elt_type == "java:SuperMethodInvocation"
     ):
+        expression = elt.find("expression")
+        to = get_to_path(expression) if expression is not None else []
+        if to is None:
+            to = ["[...]"]
         return (
-            "[...]."
+            f"{'.'.join(to)}"
+            + ("." if len(to) > 0 else "")
             + find_element_by_model_path(elt.get("method")).get("name")
-            + ("([...])" if elt.find("arguments") is not None else "()")
+            + f"({', '.join([get_guard_name(arg) for arg in elt.findall('arguments')])})"
         )
     elif elt_type == "java:NullLiteral":
         return "null"
     elif elt_type == "java:UnresolvedItemAccess":
-        return find_element_by_model_path(elt.get("element")).get("name")
+        qualifier = elt.find("qualifier")
+        if qualifier is not None:
+            quali = get_guard_name(qualifier) + "."
+        else:
+            quali = ""
+        return quali + find_element_by_model_path(elt.get("element")).get("name")
     elif elt_type == "java:SuperFieldAccess" or elt_type == "java:FieldAccess":
         field = elt.find("field")
         if field is not None:
@@ -295,7 +310,8 @@ def get_guard_name(elt):
     elif elt_type == "java:PrefixExpression":
         return f"{elt.get('operator')}{get_guard_name(elt.find('operand'))}"
     elif elt_type == "java:PostfixExpression":
-        return f"{get_guard_name(elt.find('operand'))}{elt.get('operator')}"
+        operator = elt.get("operator")
+        return f"{get_guard_name(elt.find('operand'))}{operator if operator is not None else '++'}"
     elif elt_type == "java:ParenthesizedExpression":
         return f"({get_guard_name(elt.find('expression'))})"
     elif elt_type == "java:ThisExpression":
@@ -338,7 +354,8 @@ def get_guard_name(elt):
             f"{get_guard_name(right)}"
         )
     elif elt_type == "java:BooleanLiteral":
-        return elt.get("value")
+        value = elt.get("value")
+        return value if value is not None else "false"
     elif elt_type == "java:ConditionalExpression":
         return (
             f"{get_guard_name(elt.find('expression'))} ? "
@@ -353,12 +370,14 @@ def get_guard_name(elt):
     elif elt_type == "java:ClassInstanceCreation":
         return (
             f"new {find_element_by_model_path(elt.find('type').get('type')).get('name')}"
-            + ("([...])" if elt.find("arguments") is not None else "()")
+            + f"({', '.join([get_guard_name(arg) for arg in elt.findall('arguments')])})"
         )
     elif elt_type == "java:ArrayCreation":
         return f"new {find_element_by_model_path(elt.find('type').get('type')).get('name')}[]"
     elif elt_type == "java:StringLiteral":
         return elt.get("escapedValue")
+    elif elt_type == "java:PackageAccess":
+        return find_element_by_model_path(elt.get("package")).get("fullpath")
 
     raise Exception(f"get_guard_name: {elt} {elt.items()}")
 
@@ -394,9 +413,9 @@ def process_EnhancedForStatement(elt, itr):
     return process_elt(expression) + [
         {
             "type": "blocks",
+            "name": "for",
             "blocks": [
                 {
-                    "name": "for",
                     "guard": f"{param.get('name')} in {get_guard_name(expression)}",
                     "contents": [{"type": "scopedVariable", "name": param.get("name")}]
                     + process_elt(body),
@@ -407,9 +426,11 @@ def process_EnhancedForStatement(elt, itr):
 
 
 def process_MethodInvocation(elt, itr):
+    args = []
     res = []
 
     for arguments in get_many(itr, "arguments"):
+        args.append(arguments)
         res += process_elt(arguments)
 
     for _type_arguments in get_many(itr, "typeArguments"):
@@ -428,7 +449,10 @@ def process_MethodInvocation(elt, itr):
         {
             "type": "methodInvocation",
             "to": to if to is not None else "### unk",
-            "method": find_element_by_model_path(elt.get("method")).get("name")
+            "method": (
+                f"{find_element_by_model_path(method).get('name')}("
+                f"{', '.join([get_guard_name(arg) for arg in args])})"
+            )
             if method is not None
             else "### unk",
         }
@@ -491,7 +515,6 @@ def process_IfStatement(elt, itr):
 
     blocks = [
         {
-            "name": "if",
             "guard": get_guard_name(expression),
             "contents": process_elt(then_block),
         }
@@ -500,8 +523,7 @@ def process_IfStatement(elt, itr):
     if else_block is not None:
         blocks += [
             {
-                "name": "else",
-                "guard": None,
+                "guard": "else",
                 "contents": process_elt(else_block),
             }
         ]
@@ -509,6 +531,7 @@ def process_IfStatement(elt, itr):
     return process_elt(expression) + [
         {
             "type": "blocks",
+            "name": "if",
             "blocks": blocks,
         }
     ]
@@ -528,22 +551,23 @@ def process_ReturnStatement(elt, itr):
     expression = get_maybe(itr, "expression")
     if expression is not None:
         contents += process_elt(expression)
-    return contents + [
+    return [
         {
-            "type": "return",
+            "type": "controlFlow",
+            "name": "return",
             "value": get_guard_name(expression) if expression is not None else None,
         }
     ]
 
 
 def process_Assignment(elt, itr):
-    _left_hand_side = next_elt(itr, "leftHandSide")
+    left_hand_side = next_elt(itr, "leftHandSide")
     right_hand_side = next_elt(itr, "rightHandSide")
     # INFO maybe this should be a new scoped variable
-    # return process_elt(right_hand_side) + [
-    #     {"type": "scopedVariable", "name": get_to_path(left_hand_side)}
-    # ]
-    return process_elt(right_hand_side)
+    return process_elt(right_hand_side) + [
+        {"type": "scopedVariable", "name": get_to_path(left_hand_side)}
+    ]
+    # return process_elt(right_hand_side)
 
 
 def process_ClassInstanceCreation(elt, itr):
@@ -648,15 +672,14 @@ def process_ConditionalExpression(elt, itr):
     return process_elt(cond_expr) + [
         {
             "type": "blocks",
+            "name": "if",
             "blocks": [
                 {
-                    "name": "if",
                     "guard": get_guard_name(cond_expr),
                     "contents": process_elt(then_expr),
                 },
                 {
-                    "name": "else",
-                    "guard": None,
+                    "guard": "else",
                     "contents": process_elt(else_expr),
                 },
             ],
@@ -675,9 +698,9 @@ def process_SynchronizedStatement(elt, itr):
     return process_elt(expression) + [
         {
             "type": "blocks",
+            "name": "synchronized",
             "blocks": [
                 {
-                    "name": "synchronized",
                     "guard": get_guard_name(expression),
                     "contents": process_elt(body),
                 }
@@ -709,17 +732,16 @@ def process_TryStatement(elt, itr):
     return [
         {
             "type": "blocks",
+            "name": "try",
             "blocks": [
                 {
-                    "name": "try",
                     "guard": None,
                     "contents": process_elt(body),
                 },
             ]
             + [
                 {
-                    "name": "catch",
-                    "guard": catch["guard"],
+                    "guard": f"catch {catch['guard']}",
                     "contents": catch["contents"],
                 }
                 for catch in catch_res
@@ -727,8 +749,7 @@ def process_TryStatement(elt, itr):
             + (
                 [
                     {
-                        "name": "finally",
-                        "guard": None,
+                        "guard": "finally",
                         "contents": process_elt(finally_clause),
                     }
                 ]
@@ -746,8 +767,9 @@ def process_TypeLiteral(elt, itr):
 
 def process_ThrowStatement(elt, itr):
     expression = next_elt(itr, "expression")
-    # return process_elt(expression) + [{"type": "throw"}]
-    return process_elt(expression) + [{"type": "controlFlow", "name": "throw"}]
+    return process_elt(expression) + [
+        {"type": "controlFlow", "name": "throw", "value": get_guard_name(expression)}
+    ]
 
 
 def process_InstanceofExpression(elt, itr):
@@ -775,9 +797,9 @@ def process_WhileStatement(elt, itr):
     return process_elt(expression) + [
         {
             "type": "blocks",
+            "name": "while",
             "blocks": [
                 {
-                    "name": "while",
                     "guard": get_guard_name(expression),
                     "contents": process_elt(body),
                 }
@@ -789,7 +811,9 @@ def process_WhileStatement(elt, itr):
 def process_ForStatement(elt, itr):
     cond_expr = get_maybe(itr, "expression")
     res_updaters = []
+    upd = []
     for updaters in get_many(itr, "updaters"):
+        upd.append(updaters)
         res_updaters += process_elt(updaters)
     res_initializers = []
     for initializers in get_many(itr, "initializers"):
@@ -799,15 +823,14 @@ def process_ForStatement(elt, itr):
     return [
         {
             "type": "blocks",
+            "name": "for",
             "blocks": [
                 {
-                    "name": "for init",
-                    "guard": None,
+                    "guard": "for init",
                     "contents": res_initializers,
                 },
                 {
-                    "name": "for",
-                    "guard": get_guard_name(cond_expr),
+                    "guard": f"for {get_guard_name(cond_expr)}; {', '.join([get_guard_name(updater) for updater in upd])}",
                     "contents": (
                         process_elt(cond_expr) if cond_expr is not None else []
                     )
@@ -859,13 +882,11 @@ def process_SwitchCase(elt, itr):
 
 
 def process_BreakStatement(elt, itr):
-    # return [{"type": "break"}]
-    return [{"type": "controlFlow", "name": "break"}]
+    return [{"type": "controlFlow", "name": "break", "value": None}]
 
 
 def process_ContinueStatement(elt, itr):
-    # return [{"type": "continue"}]
-    return [{"type": "controlFlow", "name": "continue"}]
+    return [{"type": "controlFlow", "name": "continue", "value": None}]
 
 
 def process_DoStatement(elt, itr):
@@ -874,9 +895,9 @@ def process_DoStatement(elt, itr):
     return process_elt(expression) + [
         {
             "type": "blocks",
+            "name": "do while",
             "blocks": [
                 {
-                    "name": "do while",
                     "guard": get_guard_name(expression),
                     "contents": process_elt(body),
                 }

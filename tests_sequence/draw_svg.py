@@ -1,6 +1,8 @@
-import json
-from playwright.sync_api import sync_playwright
 import time
+import json
+import xml.etree.ElementTree as ET
+from playwright.sync_api import sync_playwright
+import re
 
 
 # https://sequencediagram.org/
@@ -9,14 +11,26 @@ import time
 THIS_NAME = "this"
 
 
+def san(s):
+    escape = ["\\", "*", "/", "+", "-", '"']
+    for c in escape:
+        s = s.replace(c, f"\\{c}")
+    return s
+
+
 def draw_sequence_diagram(seq_data):
+    draw_sequence_diagram.unk_count = 0
+
     out = ""
 
-    out += "title Sequence Diagram\n"
+    out += f"title {seq_data['title']}\n"
     out += f'participant "**{THIS_NAME}**" as {THIS_NAME}\n'
-    out += draw_elements(seq_data)
+    out += draw_elements(seq_data["sequence"])
 
     return out
+
+
+draw_sequence_diagram.unk_count = 0
 
 
 def draw_elements(elements):
@@ -34,52 +48,51 @@ def draw_elements(elements):
             elt_type = elt["type"]
 
             if elt_type == "methodInvocation":
-                append(f"{THIS_NAME}->{'.'.join(elt['to'])}:{elt['method']}")
+                to = elt["to"]
+                if to == "### unk":
+                    to = f"_{draw_sequence_diagram.unk_count}"
+                    draw_sequence_diagram.unk_count += 1
+                    append(f"participant \"//[...]//\" as {to}")
+                elif len(to) > 0:
+                    to = san('.'.join(to))
+                else:
+                    to = THIS_NAME
+                append(
+                    f"{THIS_NAME}->{to}:"
+                    f"{san(elt['method'])}"
+                )
 
             elif elt_type == "newInstance":
                 pass  # TODO maybe need to get the variable "to"
 
             elif elt_type == "scopedVariable":
                 if is_used(elt["name"], elements):
-                    append(f"{THIS_NAME}->>*{elt['name']}://new//")
-
-            elif elt_type == "return":
-                append(
-                    f"aboxleft over {THIS_NAME}:**return**"
-                    + (f" {elt['value']}" if elt["value"] else "")
-                )
+                    append(f"{THIS_NAME}->>*{san(elt['name'])}://create//")
 
             elif elt_type == "controlFlow":
-                append(f"aboxleft over {THIS_NAME}:**{elt['name']}**")
+                append(
+                    f"aboxleft over {THIS_NAME}:**{san(elt['name'])}**"
+                    + (f" {san(elt['value'])}" if elt["value"] else "")
+                )
 
             elif elt_type == "blocks":
                 blocks = elt["blocks"]
-                # TODO find solution for multiple blocks
+                name = elt["name"]
 
-                blocks = [
-                    block
-                    for block in blocks
-                    if block["guard"] or draw_elements(block["contents"])
-                ]
+                for idx, block in enumerate(blocks):
+                    append(
+                        f"{f'alt _{name}_' if idx == 0 else 'else '}"
+                        + (f"{block['guard']}" if block["guard"] else "")
+                    )
+                    append(draw_elements(block["contents"]))
 
-                if len(blocks) > 1:
-                    append("group -")
+                append("end")
 
-                for block in blocks:
-                    contents = draw_elements(block["contents"])
+            else:
+                raise Exception("unknown type", elt_type)
 
-                    if block["guard"] or contents:
-                        append(
-                            f"group {block['name']} "
-                            + (f" [{block['guard']}]" if block["guard"] else "")
-                        )
-                        append(draw_elements(block["contents"]))
-                        append("end")
-
-                if len(blocks) > 1:
-                    append("end")
-
-        except Exception:
+        except Exception as e:
+            print("draw exception:", e)
             continue
 
     return out
@@ -107,18 +120,42 @@ def render_sequence_diagram(seq_text):
         page.goto("https://sequencediagram.org/")
 
         page.click(".CodeMirror-line")
-        page.evaluate(f"SEQ.main.getSourceValue = () => `{seq_text}`")
+        page.evaluate(f"SEQ.main.getSourceValue = () => {json.dumps(seq_text)}")
         page.keyboard.press("a")
         time.sleep(0.3)
         svg = page.evaluate("SEQ.saveAndOpen.generateSvgData()")
 
         browser.close()
 
+    elt = ET.fromstring(svg)
+    replace_alt(elt)
+    svg = ET.tostring(elt, encoding="utf-8")
+
     return svg
+
+
+def replace_alt(elt):
+    prev_alt = None
+    for child in elt:
+        if prev_alt is not None:
+            if child.tag == "{http://www.w3.org/2000/svg}text":
+                m = re.search(r"\[_([^_]*)_(.*)\]", child.text)
+                child.text = f"[{m.group(2)}]"
+                prev_alt.text = m.group(1)
+            else:
+                continue
+
+        if child.tag == "{http://www.w3.org/2000/svg}text" and child.text == "alt":
+            prev_alt = child
+        else:
+            prev_alt = None
+
+        replace_alt(child)
 
 
 def draw_svg(seq):
     seq_text = draw_sequence_diagram(seq)
+    print("##", seq_text)
     return render_sequence_diagram(seq_text)
 
 
