@@ -72,6 +72,9 @@ def model_generate(code):
         top_p=0.8,
     )
     model_output = tokenizer.decode(outputs[0][2:-1])
+    
+    print("input:", code)
+    print("output:", model_output)
 
     seq_text = None
     while seq_text is None:

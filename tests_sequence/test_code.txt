@@ -1,14 +1,7 @@
-public async Task FromSip008Json(IEnumerable<string> paths, CancellationToken cancellationToken = default)
-        {
-            foreach (var path in paths)
-            {
-                using var jsonFile = new FileStream(path, FileMode.Open);
-                var group = await JsonSerializer.DeserializeAsync<Group>(jsonFile, JsonHelper.snakeCaseJsonDeserializerOptions, cancellationToken);
-                if (group != null)
-                {
-                    if (PrefixGroupName && !string.IsNullOrEmpty(group.Name))
-                        group.Servers.ForEach(x => x.Name = $"{group.Name} - {x.Name}");
-                    Servers.AddRange(group.Servers);
-                }
-            }
-        }
+def test(x):
+		if xyz:
+			x.foo1()
+		else:
+			x.foo2()
+		
+		x.foo3()
