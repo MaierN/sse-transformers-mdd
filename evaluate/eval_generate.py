@@ -8,16 +8,21 @@ import torch
 from torch.utils.data import DataLoader, SequentialSampler
 from tqdm import tqdm
 import numpy as np
+from dotenv import dotenv_values
+
+OUTPUT_PATH = dotenv_values("../.env")["OUTPUT_PATH"]
 
 tokenizer = RobertaTokenizer.from_pretrained("Salesforce/codet5-small")
-model = T5ForConditionalGeneration.from_pretrained("/data/nicolasmaier/model/ended-3")
+model = T5ForConditionalGeneration.from_pretrained(
+    f"{OUTPUT_PATH}/model/seq_codet5_finetuned"
+)
 
 # device = "cpu"
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 print(device)
 model_gpu = model.to(device)
 
-dataset_orig = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_3")
+dataset_orig = load_from_disk(f"{OUTPUT_PATH}/dataset/seq_dataset_filtered")
 dataset = dataset_orig.remove_columns(
     ["code", "contents", "xmi", "originalLine", "seq"]
 )
@@ -76,4 +81,4 @@ dataset_eval = dataset_orig["test"].add_column("generated", gen)
 dataset_eval = dataset_eval.add_column("generated_decoded", gen_dec)
 
 print("saving")
-dataset_eval.save_to_disk("/data/nicolasmaier/dataset/hf_clean_seq_dataset_3_eval")
+dataset_eval.save_to_disk(f"{OUTPUT_PATH}/dataset/seq_dataset_filtered_eval")

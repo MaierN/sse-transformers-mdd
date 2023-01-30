@@ -1,0 +1,18 @@
+public void test(int x, String y) {
+        A a = new A();
+        
+        a.foo1();
+        a.foo2(42);
+        
+        while (a.foo3()) {
+            B b = new B();
+            
+            b.bar1();
+            
+            if (b.bar2() && xyz) {
+                b.bar3(42);
+            } else {
+                b.bar4();
+            }
+        }
+    }

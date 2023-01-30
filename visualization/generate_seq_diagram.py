@@ -1,27 +1,25 @@
 import json
-from datasets import load_from_disk
 from transformers import (
     RobertaTokenizer,
     T5ForConditionalGeneration,
 )
 import torch
 from draw_svg import *
+from dotenv import dotenv_values
+
+OUTPUT_PATH = dotenv_values("../.env")["OUTPUT_PATH"]
 
 torch.set_num_threads(16)
 
 tokenizer = RobertaTokenizer.from_pretrained("Salesforce/codet5-small")
 model = T5ForConditionalGeneration.from_pretrained(
-    # "/data/nicolasmaier/model/ended-merged-1"
-    "/data/nicolasmaier/model/codet5-merged-1/checkpoint-10000"
+    f"{OUTPUT_PATH}/model/seq_codet5_finetuned"
 )
 
 # device = "cpu"
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 print(device)
 model_gpu = model.to(device)
-
-dataset = load_from_disk("/data/nicolasmaier/dataset/hf_clean_seq_1")
-print(dataset)
 
 
 def fix_json(s):
@@ -67,7 +65,6 @@ def model_generate(code):
 
     outputs = model_gpu.generate(
         model_input.input_ids,
-        attention_mask=model_input.attention_mask,
         num_beams=10,
         max_length=510,
         # do_sample=True,
@@ -77,8 +74,9 @@ def model_generate(code):
     )
     model_output = tokenizer.decode(outputs[0][2:-1])
 
-    # print("input:", code)
-    # print("output:", model_output)
+    print("input:", code)
+    print("output:", model_output)
+
     seq_text = None
     while seq_text is None:
         try:
@@ -96,49 +94,15 @@ def model_generate(code):
 
 
 def main():
-    with open("test_code.txt", "r", encoding="utf-8") as f:
+    with open("test_input.txt", "r", encoding="utf-8") as f:
         code = f.read()
+        seq_text = model_generate(code)
+        print(seq_text)
+        svg = draw_svg(seq_text)
+        with open("test_output.svg", "wb") as f:
+            f.write(svg)
 
-        try:
-            seq_text = model_generate(code)
-            # print(seq_text)
-            svg = draw_svg(seq_text)
-            with open("out/model.svg", "wb") as f:
-                f.write(svg)
-        except:
-            print(".....a")
-
-    return
-
-    for i in range(10):
-        example_orig = dataset["test"][i * 1000]
-        orig_code = tokenizer.decode(example_orig["input_ids"][1:-1])
-
-        print(i)
-        # print(example_orig["originalLine"])
-        # print(example_orig["code"])
-
-        with open(f"out/code{i}.txt", "w", encoding="utf-8") as f:
-            f.write(orig_code)
-
-        with open(f"out/real{i}.svg", "wb") as f:
-            ground_truth = tokenizer.decode(example_orig["labels"][1:-1])
-            ground_truth_seq = json.loads(ground_truth)
-            f.write(draw_svg(ground_truth_seq))
-
-        try:
-            seq_text = model_generate(orig_code)
-
-            # print(seq_text)
-            print("drawing...")
-            svg = draw_svg(seq_text)
-
-            with open(f"out/model{i}.svg", "wb") as f:
-                f.write(svg)
-        except:
-            print(".....")
-
-        print("done", ground_truth_seq == seq_text)
+        print("saved .svg to test_output.svg")
 
 
 if __name__ == "__main__":

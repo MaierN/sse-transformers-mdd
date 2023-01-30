@@ -1,7 +1,0 @@
-def test(x):
-		if xyz:
-			x.foo1()
-		else:
-			x.foo2()
-		
-		x.foo3()
